@@ -23,9 +23,9 @@ Constraints:
 
 */
 
-class Solution{
-    public boolean perfectSquare_BinarySearch(int n){
-        if(n < 2) {
+class Solution {
+    public boolean perfectSquare_BinarySearch(int n) {
+        if (n < 2) {
             return true;
         }
 
@@ -33,8 +33,8 @@ class Solution{
         long r = n / 2;
         long z, couldBeSquare;
 
-        while( l <= r) {
-            z = l + (r-l) / 2;
+        while (l <= r) {
+            z = l + (r - l) / 2;
             couldBeSquare = z * z;
             if (couldBeSquare == n) {
                 return true;
