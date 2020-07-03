@@ -42,7 +42,7 @@ using std::vector;
 class Solution
 {
 public:
-    int uncrossedLines(vector<int> &A, vector<int> &B)
+    int uncrossedLines_dynamicProgramming(vector<int> &A, vector<int> &B)
     {
         int len1 = A.size();
         int len2 = B.size();
