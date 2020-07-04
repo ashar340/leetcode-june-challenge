@@ -32,7 +32,7 @@ class Solution {
         if (k == size)
             return "0";
 
-        Stack<Character> stack = new Stack();
+        Stack<Character> stack = new Stack<Character>();
 
         int count = 0;
         while (count < size) {
@@ -43,7 +43,6 @@ class Solution {
             stack.push(num.charAt(count));
             count++;
         }
-
         while (k > 0) {
             stack.pop();
             k--;
